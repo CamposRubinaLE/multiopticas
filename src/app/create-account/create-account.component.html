@@ -1,0 +1,30 @@
+<div class="container-xs pv-70">
+  <h3 class="text-center fw-medium-mon">CREAR UNA CUENTA</h3>
+  <form (submit)="registerAccount($event, firstName.value, lastName.value, phone.value, email.value, password.value)" class="pv-56">
+    <div class="form-group">
+      <label class="fw-regular-mon" for="firstName">Nombres</label>
+      <input #firstName type="text" class="form-control" id="firstName">
+    </div>
+    <div class="form-group">
+      <label class="fw-regular-mon" for="lastName">Apellidos</label>
+      <input #lastName type="text" class="form-control" id="lastName">
+    </div>
+   <div class="form-group">
+     <label class="fw-regular-mon" for="phone">Teléfono:</label>
+     <input #phone type="text" class="form-control" id="phone">
+   </div>
+   <div class="form-group">
+     <label class="fw-regular-mon" for="email">Correo Electrónico:</label>
+     <input #email type="email" class="form-control" id="email">
+   </div>
+   <div class="form-group">
+     <label class="fw-regular-mon" for="pwd">Contraseña:</label>
+     <input #password type="password" class="form-control" id="pwd">
+   </div>
+   <div class="text-center">
+     <button type="submit" class="btn btn-bg-pink fw-medium-mon">CREAR CUENTA</button>
+   </div>
+  </form>
+  <p class="text-center">¿Ya tienes una cuenta?, <a href="https://powerful-dawn-52250.herokuapp.com/admin/login/?next=/admin/" class="fw-medium-mon text-primary-brown">Ingresa aquí</a></p>
+  <p class="text-center">Olvidaste tu contraseña, <a href="" class="fw-medium-mon text-primary-brown">Recupera tu cuenta aquí.</a></p>
+</div>
