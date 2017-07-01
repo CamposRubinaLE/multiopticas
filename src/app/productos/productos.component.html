@@ -35,6 +35,9 @@
       <div class="media content-product p-21 flex-row">
         <div class="media-body flex-align-center">
           <h3 class="media-heading title-product text-primary-brown fw-medium-ral">{{ product.name }} - S/.{{ product.price }}</h3>
+          <a href="{{ product.url }}" target="_blank"><p>
+            {{ product.url }}
+          </p></a>
           <p class="description-product">{{ product.description }}</p>
         </div>
         <div class="media-right flex-align-center">
@@ -44,7 +47,7 @@
         </div>
       </div>
     </div>
-    
+
   </div>
 </div>
 <!--  END: SECCION: LISTA DE PRODUCTOS -->
